@@ -44,6 +44,11 @@ html, body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+}
+.header__logo {
+    height: 34px;
+    width: 176px;
 }
 .headrer__burger {
     display: flex;
@@ -53,4 +58,32 @@ html, body {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+}
+.footer {
+    width: 100%;
+}
+.footer__wrap {
+    display: flex;
+    flex-direction: column;
+}
+.footer__img {
+    height: 57px;
+    width: 296px;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__list-item {
+    list-style-type: none;
+}
+.footer__item-link {
+    text-decoration: none;
+    color: #505050;
+}
+.footer__rights {
+    display: flex;
+    color: #C4C4C4;
+    text-align: center;
 }
