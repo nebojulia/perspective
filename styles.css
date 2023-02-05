@@ -16,34 +16,39 @@ html, body {
     flex-direction: column;
     height: 100%;
 }
+.logo {
+    height: 100%;
+    width: 100%;
+}
 .header {
     align-items: center;
     display: flex;
     width: 100%;
+    padding: 15px 20px;
 }
-.header__wrap {
+@media (min-width: 620px) {
+    .header {
+        padding: 32px 32px 42px;
+    }
+}
+.header__inner {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 15px 20px;
     width: 100%;
-}
-@media (min-width: 992px) {
-    .header__wrap {
-        margin: 32px 32px 42px;
-    }
 }
 .header__logo {
     height: 34px;
     width: 176px;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .header__logo {
         height: 60px;
         width: 312px;
     }
 }
 .header__btn {
+    background: #fff;
     border-radius: 40px;
     border: 1px solid #40AD74;
     color: #1D1D1B;
@@ -56,7 +61,7 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .header__btn {
         display: block;
     }
@@ -69,8 +74,9 @@ html, body {
     height: 44px;
     justify-content: center;
     width: 44px;
+    border: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .header__burger {
         height: 50px;
         width: 50px;
@@ -89,7 +95,7 @@ html, body {
     padding: 58px 20px;
     width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav {
         width: 435px;
         height: 414px;
@@ -107,7 +113,7 @@ html, body {
     height: 21px;
     width: 21px;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav__close {
         display: flex;
         align-self: end;
@@ -126,7 +132,7 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav__btn {
         display: none;
     }
@@ -136,7 +142,7 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav__content {
         align-items: start;
         flex-direction: column-reverse;
@@ -148,7 +154,7 @@ html, body {
     opacity: 20%;
     width: 60px;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav__logo {
         margin-top: 20px;
     }
@@ -161,7 +167,7 @@ html, body {
     margin: 60px 0;
     padding: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav__list {
         align-items: start;
         gap: 20px;
@@ -180,7 +186,7 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .nav__item-link {
         font-size: 24px;
         line-height: 29px;
@@ -194,15 +200,15 @@ html, body {
     width: 100%;
     background: #F8F8F8;
 }
-.footer__wrap {
+.footer__inner {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 54px 40px 17px;
+    padding-top: 54px;
 }
-@media (min-width: 992px) {
-    .footer__wrap {
-        margin: 52px 188px 40px;
+@media (min-width: 620px) {
+    .footer__inner {
+        padding-top: 52px;
     }
 }
 .footer__logo {
@@ -214,14 +220,16 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: space-between;
     margin: 32px 0 26px;
     padding: 0;
+    width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .footer__list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 118px;
+        gap: 0;
         margin: 44px 0;
     }
 }
@@ -235,24 +243,28 @@ html, body {
     font-size: 16px;
     line-height: 30px;
 }
-@media (min-width: 992px) {
+@media (min-width: 620px) {
     .footer__item-link {
         font-size: 20px;
     }
 }
-.footer__hr {
-    background: #505050;
-    height: 1px;
-    width: 100%;
-}
 .footer__rights {
     color: #C4C4C4;
     display: flex;
-    margin-top: 22px;
+    padding: 22px 0 17px;
     text-align: center;
+    border-top: 1px solid #505050;
+    width: 100%;
+    justify-content: center;
 }
-@media (min-width: 992px) {
-    .footer__rights {
-        margin-top: 40px;
+.container {
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 295px;
+}
+@media (min-width: 620px) {
+    .container {
+        width: calc(100% - 64px);
+        max-width: 1544px;
     }
 }
