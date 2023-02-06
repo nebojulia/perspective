@@ -305,3 +305,9 @@ html, body {
         max-width: 1544px;
     }
 }
+@media (min-width: 1280px) {
+    .container {
+        width: calc(100% - 64px);
+        max-width: 1856px;
+    }
+}
