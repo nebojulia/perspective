@@ -60,6 +60,8 @@ html, body {
     padding: 14px 30px;
     text-decoration: none;
     text-transform: uppercase;
+    position: absolute;
+    right: 70px;
 }
 @media (min-width: 630px) {
     .header__btn {
@@ -75,8 +77,9 @@ html, body {
     justify-content: center;
     width: 44px;
     border: none;
-    position: fixed;
+    position: absolute;
     z-index: 100;
+    right: 0;
 }
 @media (min-width: 620px) {
     .header__burger {
@@ -90,7 +93,9 @@ html, body {
 .header__actions {
     display: flex;
     align-items: center;
-    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 .nav {
     align-items: center;
@@ -100,18 +105,13 @@ html, body {
     padding: 58px 20px;
     width: 100%;
     position: fixed;
-    transform: translateY(-100%);
     transition: transform 0.2s;
-    top: 0;
-    left: 0;
+    top: 64px;
     right: 0;
     bottom: 0;
     z-index: 99;
+    opacity: 0;
 }
-.show-menu {
-    transform: translateY(0);
-}
-
 @media (min-width: 620px) {
     .nav {
         width: 435px;
@@ -120,9 +120,11 @@ html, body {
         padding: 18px 17px 86px 51px;
         align-items: start;
         position: absolute;
-        top: 100px;
-        right: 32px;
+        top: -32px;
     }
+}
+.show-menu {
+    opacity: 1;
 }
 .nav__close {
     display: none;
@@ -290,6 +292,7 @@ html, body {
     margin: 0 auto;
     width: calc(100% - 40px);
     max-width: 335px;
+    position: relative;
 }
 @media (min-width: 620px) {
     .container {
