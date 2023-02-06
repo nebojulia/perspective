@@ -288,6 +288,11 @@ html, body {
     width: 100%;
     justify-content: center;
 }
+@media (min-width: 1280px) {
+    .footer__rights {
+        padding: 40px 0;
+    }
+}
 .container {
     margin: 0 auto;
     width: calc(100% - 40px);
