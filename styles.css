@@ -61,7 +61,7 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
 }
-@media (min-width: 620px) {
+@media (min-width: 630px) {
     .header__btn {
         display: block;
     }
@@ -94,6 +94,7 @@ html, body {
     flex-direction: column;
     padding: 58px 20px;
     width: 100%;
+    opacity: 0;
 }
 @media (min-width: 620px) {
     .nav {
@@ -230,7 +231,6 @@ html, body {
     .footer__list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 0;
         margin: 44px 0;
     }
 }
@@ -242,7 +242,7 @@ html, body {
         flex: 30%;
     }
 }
-@media (min-width: 945px) {
+@media (min-width: 1280px) {
     .footer__list-item {
         flex: auto;
     }
@@ -256,7 +256,7 @@ html, body {
     line-height: 30px;
     text-decoration: none;
 }
-@media (min-width: 945px) {
+@media (min-width: 1280px) {
     .footer__item-link {
         font-size: 20px;
     }
